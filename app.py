@@ -6,6 +6,8 @@ import altair as alt
 import numpy as np
 import pandas as pd
 
+[global] dataFrameSerialization = "legacy"
+
 st.header('Homework 1')
 
 st.markdown(
@@ -116,6 +118,3 @@ bar = alt.Chart(source).mark_bar(color = '#03cffc').encode(
 )
 
 st.altair_chart(bar, use_container_width=True)
-
-dataFrameSerialization = "legacy"
-
