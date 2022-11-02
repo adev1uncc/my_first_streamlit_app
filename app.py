@@ -117,6 +117,5 @@ bar = alt.Chart(source).mark_bar(color = '#03cffc').encode(
 
 st.altair_chart(bar, use_container_width=True)
 
-[global]
 dataFrameSerialization = "legacy"
 
