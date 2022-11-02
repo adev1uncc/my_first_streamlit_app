@@ -107,9 +107,10 @@ The 2 changes I made were:
 )
 
 source = pd.read_json('imdb.json')
-st.write(source)
+source1 = source.astype(str)
+st.write(source1)
 
-bar = alt.Chart(source).mark_bar(color = '#03cffc').encode(
+bar = alt.Chart(source1).mark_bar(color = '#03cffc').encode(
     alt.X("IMDB_Rating:Q", bin=True,title="IMDB_Rating"),
     alt.Y('count()', title= "Records")
 )
