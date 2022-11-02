@@ -6,11 +6,6 @@ import altair as alt
 import numpy as np
 import pandas as pd
 
-streamlit config show
-
-[global] 
-dataFrameSerialization = "legacy"
-
 st.header('Homework 1')
 
 st.markdown(
