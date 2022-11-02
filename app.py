@@ -106,7 +106,7 @@ The 2 changes I made were:
 """
 )
 
-source = pd.read_json('imdb.json')
+source = pd.read_csv('imdb.csv')
 #source1 = source.astype(str)
 st.dataframe(source)
 
